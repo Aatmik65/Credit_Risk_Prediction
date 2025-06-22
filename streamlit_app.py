@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split
 
 st.set_page_config(page_title="Credit Risk Predictor", layout="centered")
 st.title("💳 Credit Risk Prediction App")
+st.caption("⬅️ Navigate to the top-left and press the arrow to view the score")
 @st.cache_data
 def load_data():
     return pd.read_csv("credit_data_synthetic.csv")
